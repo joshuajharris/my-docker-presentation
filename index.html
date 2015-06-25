@@ -11,7 +11,7 @@
     <div class="reveal">
       <div class="slides">
         
-        <section>
+        <section data-background="https://d21ii91i3y6o6h.cloudfront.net/gallery_images/from_proof/1026/large/1396373089/docker.png" data-background-size="500px" data-background-position="bottom right">
           <h1>My Docker Experience</h1>
           <p><a href="http://www.github.com/joshuajharris">Joshua Harris</a></p>
         </section>
@@ -19,20 +19,27 @@
         <section>
           <h2>Background</h2>
           <p>
-            I'm very comfortable developing in a linux environment due to all the tools/configurations
-            I've set up and gotten use to.  When starting my new intern position I was presented with a
-            windows machine.  This was no big deal because I was able to just use a virtual machine, putting
-            myself in the environment which allows me to have a better workflow.
+            For about a year I've been developing almost exclusively on linux
+            <ul>
+              <li>I make use of unix tools</li>
+              <li>Have configurations to help my workflow</li>
+              <li>Prior to this experience I only had a basic understanding of what Docker could do</li>
+              <li>The computer given to me at work was a Windows machine</li>
+              <li>I spun up a virtual machine(VM) and after installation and setting up all my tools, was back to where I felt comfortable</li>
+            </ul>
           </p>
         </section>
 
         <section>
           <h2>Problems?</h2>
           <p>
-            The VM solution is great, being able to run any environment I want.  But I ran into some annoyances.
+            After using a VM for a couple months I ran into some annoyances 
             <ul>
-              <li>Maintenence was annoying</li>
-              <li>Spending time troubleshooting issues was unproductive</li>
+              <li>Had to focus some effort during work to maintenence</li>
+              <li>Spending time troubleshooting VM issues was unproductive</li>
+              <li>Performance inside the VM was not the best</li>
+              <li>Wanted something which didn't require setup or maintenence</li>
+              <li>Wanted something which I could create once and never have to worry about it again</li>
             </ul>
           </p>
         </section>
@@ -61,7 +68,7 @@
         <section>
           <h2>Docker Research</h2>
           <p>
-            I started with figuring out what components would be needed for my basci lamp stack
+            I started with figuring out what components would be needed for my basic lamp stack
             <ul>
               <li>
                 PHP
