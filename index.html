@@ -16,7 +16,7 @@
         <section>
           <h1>
             <img width="35%" src="http://images.room4debate.com/topic/thumb_5523242463ad79396af7e9cf_1200x1200.png" style="float:left">
-            Docker 
+            Docker How To
           </h1>
           <p><a href="http://www.github.com/joshuajharris">Joshua Harris</a></p>
         </section>
@@ -52,21 +52,46 @@
         </section>
 
         <section>
-          <h3>Docker is a Container Engine</h3>
+          <h2>Docker is a Container Engine</h2>
+          <p>Docker uses LXC (Linux Container) in the building of their containers</p>
         </section>
 
       </section>
 
       <!-- Containers -->
       <section>
-        <section data-background="http://sahilsk.github.io/images/docker_buid_ship_run_lg.jpg" data-background-size="50%" data-background-position="bottom">
-          <h1>Containers</h1>
+        <section> 
+          <h1 style="color:#ff0000">Containers</h1>
+          <p><img src="http://www.linux.org/attachments/slide-jpg.409/" width="100%"></p>
         </section> 
 
         <section>
           <h1>What are Containers?</h1>
-          <p></p>
+          <p>
+            A container is made up of...
+            <ul>
+              <li>runtime environment</li>
+              <li>the application</li>
+              <li>application's dependencies.</li>
+            </ul>
+          </p>
         </section> 
+
+        <section>
+          <h2>How are Containers different than VMs</h2>
+          <p>
+            <ul>
+              <li>Containers don't run a full copy of operating system</p>
+              <li>Containers don't virtualize hardware (Much less taxing on RAM and CPU)</p>
+              <li>Containers can be built and destroyed very quickly</p>
+              <li>A container will run the same way, anywhere</p>
+            </ul>
+          </p>
+        </section>
+        
+        <section data-background="http://blog.leaseweb.com/uploads/2014/07/containers-vs-vms.jpg" data-background-size="60%">
+          <h1></h1>
+        </section>
 
       </section>
 
@@ -80,25 +105,33 @@
 
         <section>
           <h1>Setup</h1>
-          <p></p>
+          <p><a href="https://docs.docker.com/installation/">Download and install Docker</a></p>
+        </section>
+
+        <section>
+          <h1>Mac & Windows</h1>
+          <p>Docker for non-linux machines runs in an extremely lightweight VM</p>
         </section>
       </section>
 
       <!-- Diving Deeper -->
 
       <section>
-        <section>
+        <section data-background="http://i.giphy.com/Vv9TgGahpBWOQ.gif">
           <h1>Diving Deeper</h1>
           <p></p>
         </section>
 
         <section>
-          <h1>Docker Hub</h1>
+          <h2>Docker Hub</h2>
+          <p>
+            Registry service for Docker containers
+          </p>
         </section>
       </section>
         
       <section>
-        <h1>Demo</h1>
+        <h1>Demo Time!</h1>
         <p></p>
       </section>
 
@@ -110,7 +143,16 @@
         </section>
 
         <section>
-          <h1>Amazon Web Services</h1>
+          <h2>Local Development</h2>
+          <code data-trim contenteditable>docker run -d -p 80:80 --name figlet-app -v ~/dir/to/code:/app figlet-app-image</code>
+        </section>
+
+        <section>
+          <h2>Amazon Web Services</h2>
+          <p>
+            Many PaaS's (Platform as a Service) like AWS offer
+            ways to run Docker containers on their servers
+          </p>
         </section>
       </section>
 
@@ -128,7 +170,8 @@
           <h2>Credits</h2>
           <p>
             Slides By <a href="https://github.com/joshuajharris/my-docker-presentation">Joshua Harris</a><br/>
-            Presentation Built using <a href="https://github.com/hakimel/reveal.js/">reveal.js</a>
+            Presentation Built using <a href="https://github.com/hakimel/reveal.js/">reveal.js</a><br/>
+            <a href="https://github.com/epeay/figlet-docker-app">epeay</a> - figlet example
           </p>
         </section>
 
