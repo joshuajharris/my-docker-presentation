@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# If any command returns non-zero, quit the script
+set -e
+
+docker run -d -p 80:80 figlet-app

@@ -1,0 +1,12 @@
+{
+  "name": "joshuajharris/figlet-app",
+  "authors": [
+    {
+      "name": "Joshua Harris",
+      "email": "joshua.j.harris@nasa.gov"
+    }
+  ],
+  "require": {
+    "zendframework/zend-text":"2.5.1"
+  }
+}
